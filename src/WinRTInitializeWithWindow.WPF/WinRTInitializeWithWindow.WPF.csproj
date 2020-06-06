@@ -6,13 +6,25 @@
     <UseWPF>true</UseWPF>
     <RootNamespace>mveril.WinRT.InitializeWithWindow.WPF</RootNamespace>
     <AssemblyName>WinRTInitializeWithWindow.WPF</AssemblyName>
-    <Copyright>Mickaël Véril</Copyright>
+    <Copyright>Copyright © 2020 Mickaël VERIL</Copyright>
     <Product>WinRTInitializeWithWindow</Product>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/mveril/WinRTInitializeWithWindow</RepositoryUrl>
+    <PackageTags>Windows;Windows10;WinRT;IInitializeWithWindow;WPF</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <Authors>Mickaël VERIL</Authors>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\WinRTInitializeWithWindow.Core\WinRTInitializeWithWindow.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>

@@ -6,13 +6,25 @@
     <UseWindowsForms>true</UseWindowsForms>
     <RootNamespace>mveril.WinRT.InitializeWithWindow.WinForms</RootNamespace>
     <AssemblyName>WinRTInitializeWithWindow.WinForms</AssemblyName>
-    <Copyright>Mickaël Véril</Copyright>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Copyright © 2020 Mickaël VERIL</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/mveril/WinRTInitializeWithWindow</RepositoryUrl>
+    <PackageTags>Windows;Windows10;WinRT;IInitializeWithWindow;WindowsForms</PackageTags>
+    <Authors>Mickaël VERIL</Authors>
+    <Product>WinRTInitializeWithWindow</Product>
   </PropertyGroup>
   
   <ItemGroup>
     <ProjectReference Include="..\WinRTInitializeWithWindow.Core\WinRTInitializeWithWindow.Core.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
