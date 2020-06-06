@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <RootNamespace>mveril.WinRT.InitializeWithWindow.Core</RootNamespace>
+    <AssemblyName>WinRTInitializeWithWindow.Core</AssemblyName>
+    <Authors>mveri</Authors>
+    <Product>WinRTInitializeWithWindow</Product>
+    <Copyright>mveril</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DocumentationFile>bin\Release\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+</Project>
