@@ -17,7 +17,11 @@ namespace mveril.WinRT.InitializeWithWindow.samples.WPF
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             var dlg = new MessageDialog("Hellow World",$"UWP {nameof(MessageDialog)}") ;
+#if CSWinRT
+            this.InitializeWinRTChild(dlg.ThisPtr);
+#else
             this.InitializeWinRTChild(dlg);
+#endif
             await dlg.ShowAsync();
         }
     }

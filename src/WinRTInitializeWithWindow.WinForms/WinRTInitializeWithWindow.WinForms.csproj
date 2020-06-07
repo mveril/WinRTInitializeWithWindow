@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>net45;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net45;netcoreapp3.1;net5</TargetFrameworks>
     <UseWindowsForms>true</UseWindowsForms>
     <RootNamespace>mveril.WinRT.InitializeWithWindow.WinForms</RootNamespace>
     <AssemblyName>WinRTInitializeWithWindow.WinForms</AssemblyName>
@@ -16,7 +16,9 @@
     <Product>WinRTInitializeWithWindow</Product>
     <Description>A C# wrapper around IInitializeWithWindow with an extension method for Windows Forms</Description>
   </PropertyGroup>
-  
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net5'">
+		<DefineConstants>CSWinRT</DefineConstants>
+	</PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\WinRTInitializeWithWindow.Core\WinRTInitializeWithWindow.Core.csproj" />
   </ItemGroup>
