@@ -13,4 +13,4 @@ It's the core of the API whose other components depend.
 ### WinRTInitializeWithWindow.WinForms
 It's the WindowsForms component with the extension for the `form`class.
 ### WinRTInitializeWithWindow.WPF
-It's the WPF component the extension for the `Window`class.
+It's the WPF component with the extension for the `Window`class.
