@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFrameworks>net472;netcoreapp3.1</TargetFrameworks>
-    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\WinRTInitializeWithWindow.WPF\WinRTInitializeWithWindow.WPF.csproj" />
+    <ProjectReference Include="..\..\..\src\WinRTInitializeWithWindow.WinForms\WinRTInitializeWithWindow.WinForms.csproj" />
   </ItemGroup>
 
 </Project>
