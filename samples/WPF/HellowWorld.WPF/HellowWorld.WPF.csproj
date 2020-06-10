@@ -24,7 +24,7 @@
 	</Choose>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\WinRTInitializeWithWindow.WPF\WinRTInitializeWithWindow.WPF.csproj" />
+    <ProjectReference Include="..\..\..\src\WinRTInitializeWithWindow.WPF\WinRTInitializeWithWindow.WPF.csproj" />
   </ItemGroup>
 
 </Project>

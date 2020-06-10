@@ -23,7 +23,7 @@
 	</Choose>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\WinRTInitializeWithWindow.WinForms\WinRTInitializeWithWindow.WinForms.csproj" />
+    <ProjectReference Include="..\..\..\src\WinRTInitializeWithWindow.WinForms\WinRTInitializeWithWindow.WinForms.csproj" />
   </ItemGroup>
 
 </Project>
