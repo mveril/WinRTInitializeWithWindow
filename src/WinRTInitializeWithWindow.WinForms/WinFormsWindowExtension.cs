@@ -5,9 +5,10 @@ using mveril.WinRT.InitializeWithWindow.Core;
 
 namespace mveril.WinRT.InitializeWithWindow.WinForms
 {
-#pragma warning disable CS1591
+    /// <summary>
+    /// <see langword="static"/> <see langword="class"/> that contain the Windows Form <see cref="Form"/> extension method
+    /// </summary>
     public static class WinFormsWindowExtension
-#pragma warning restore CS1591
     {
         /// <summary>
         /// Extension method to initialize WinRT object with this <see cref="Form"/>

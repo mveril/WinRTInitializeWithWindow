@@ -13,6 +13,9 @@
     <RepositoryUrl>https://github.com/mveril/WinRTInitializeWithWindow</RepositoryUrl>
     <PackageTags>Windows;Windows10;WinRT;IInitializeWithWindow</PackageTags>
     <Description>A C# wrapper around IInitializeWithWindow</Description>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Version>1.0.0.1</Version>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
     <DocumentationFile>bin\Release\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>

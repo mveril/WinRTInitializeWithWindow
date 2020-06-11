@@ -7,9 +7,10 @@ using mveril.WinRT.InitializeWithWindow.Core;
 
 namespace mveril.WinRT.InitializeWithWindow.WPF
 {
-#pragma warning disable CS1591
+    /// <summary>
+    /// <see langword="static"/> <see langword="class"/> that contain the WPF <see cref="Window"/> extension method
+    /// </summary>
     public static class WPFWindowExtension
-#pragma warning restore CS1591
     {
         /// <summary>
         /// Extension method to initialize WinRT object with this <see cref="Window"/>
