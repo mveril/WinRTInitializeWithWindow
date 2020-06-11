@@ -14,7 +14,7 @@
     <PackageTags>Windows;Windows10;WinRT;IInitializeWithWindow;WPF</PackageTags>
     <RepositoryType>git</RepositoryType>
     <Authors>Mickaël VERIL</Authors>
-    <Description>A C# wrapper around IInitializeWithWindow with an extension method for WPF</Description>
+    <Description>A C# wrapper around IInitializeWithWindow with an extension method for WPF.</Description>
     <AssemblyVersion>1.0.0.1</AssemblyVersion>
     <FileVersion>1.0.0.1</FileVersion>
     <Version>1.0.0.1</Version>
