@@ -14,7 +14,11 @@
     <PackageTags>Windows;Windows10;WinRT;IInitializeWithWindow;WindowsForms</PackageTags>
     <Authors>Mickaël VERIL</Authors>
     <Product>WinRTInitializeWithWindow</Product>
-    <Description>A C# wrapper around IInitializeWithWindow with an extension method for Windows Forms</Description>
+    <Description>A C# wrapper around IInitializeWithWindow with an extension method for Windows Forms.</Description>
+	<AssemblyVersion>2.0.0.1</AssemblyVersion>
+	<FileVersion>2.0.0.1</FileVersion>
+	<Version>2.0.0-preview1</Version>
+	<AssemblyInformationalVersion>2.0.0-preview1</AssemblyInformationalVersion>
   </PropertyGroup>
 	<PropertyGroup Condition="'$(TargetFramework)' == 'net5'">
 		<DefineConstants>CSWinRT</DefineConstants>

@@ -28,6 +28,10 @@ EndProject
 Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "HellowWorld.WinUI (Package)", "samples\WinUI\HellowWorld.WinUI\HellowWorld.WinUI (Package)\HellowWorld.WinUI (Package).wapproj", "{41519638-AB0B-477F-BBD9-FE5CE985E7F5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HellowWorld.WinUI", "samples\WinUI\HellowWorld.WinUI\HellowWorld.WinUI\HellowWorld.WinUI.csproj", "{20A6D3AF-C06D-4863-8EC8-B41079093F7C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DEBC7D01-85EE-437F-A85C-01C1CC1870E7}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
