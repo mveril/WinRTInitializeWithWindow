@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.1;net5</TargetFrameworks>
+    <TargetFrameworks>netstandard1.1;net5.0-windows10.0.17763</TargetFrameworks>
     <RootNamespace>mveril.WinRT.InitializeWithWindow.Core</RootNamespace>
     <AssemblyName>WinRTInitializeWithWindow.Core</AssemblyName>
     <Authors>Mickaël VERIL</Authors>
@@ -15,29 +15,17 @@
     <Description>A C# wrapper around IInitializeWithWindow.</Description>
 	<AssemblyVersion>2.0.0.1</AssemblyVersion>
 	<FileVersion>2.0.0.1</FileVersion>
-	<Version>2.0.0-preview1</Version>
-	<AssemblyInformationalVersion>2.0.0-preview1</AssemblyInformationalVersion>
+	<Version>2.0.0</Version>
+	<AssemblyInformationalVersion>2.0.0</AssemblyInformationalVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
     <DocumentationFile>bin\Release\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
   </PropertyGroup>
-  <Choose>
-    <When Condition="'$(TargetFramework)' == 'net5'">
-		<PropertyGroup>
-			<DefineConstants>CSWinRT</DefineConstants>
-		</PropertyGroup>
-	<ItemGroup>
-	  <PackageReference Include="Microsoft.VCRTForwarders.140" Version="1.0.6" />
-	  <PackageReference Include="Microsoft.Windows.CsWinRT" Version="0.1.0-prerelease.200512.7" />
-	</ItemGroup>
-	</When>
-	<Otherwise>
-	  <ItemGroup>
-		<Compile Remove="CSWinRT.cs" />
-		<None Include="CSWinRT.cs" />
-	  </ItemGroup>
-	</Otherwise>
-  </Choose>
+  
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net5.0-windows10.0.17763'">
+		<DefineConstants>CSWinRT</DefineConstants>
+	</PropertyGroup>
+
   <ItemGroup>
     <None Include="..\..\LICENSE">
       <Pack>True</Pack>
