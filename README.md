@@ -1,5 +1,10 @@
 # WinRTInitializeWithWindow
 A C# wrapper around  [IInitializeWithWindow](https://docs.microsoft.com/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithwindow) with extension method for WPF and Windows Forms
+
+## Compatibility
+⚠️ This API only works on .NET Core 3.1 and lower.
+For .NET 5 use the [interop APIs](https://docs.microsoft.com/windows/apps/desktop/modernize/winrt-com-interop-csharp) of C#/WinRT.
+
 ## Example (for WPF and Windows Forms)
 ```csharp
 var dlg = new MessageDialog("Hellow World",$"UWP {nameof(MessageDialog)}") ;
